@@ -19,6 +19,7 @@ struct RevenueCatDemoApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     init() {
+        // This is where you'll add your API key
         Purchases.configure(withAPIKey: "")
         Purchases.logLevel = .verbose
     }
